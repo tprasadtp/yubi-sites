@@ -1,0 +1,22 @@
+permalink: pretty
+markdown: kramdown
+
+title: Yubikey Authentication
+author: Prasad Tengse
+description:
+    List of sites with Two Factor Auth support which includes SMS, email,
+    phone calls, hardware, and software.
+url: https://yubikey.prasadt.com
+repo: https://github.com/tprasadtp/yubi-otp-sites
+img: img/logo.png
+include: ['_pages']
+exclude:
+    - CNAME
+    - CONTRIBUTING.md
+    - EXCLUSION.md
+    - Gemfile
+    - LICENSE
+    - README.md
+    - Rakefile
+    - verify.rb
+    - vendor

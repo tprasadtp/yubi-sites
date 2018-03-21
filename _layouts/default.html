@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="{{ site.author }}">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ site.url }}/{{ site.img }}">
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:description" content="{{ page.description }}">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
+
+
+
+  <title>{{ site.title }}</title>
+
+  <!-- Google Fonts should not use SRI hashes as the CSS served dynamically changes depending on browser -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css"
+        integrity="sha384-OWA++c6zXatjdqJdL8H+05IXMubqBVwUdl1Cd9GzMwpjc9lBoy0rSYmTLtj1IDKv" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/corner.css">
+</head>
+
+<body>
+{{ content }}
+
+<div class="ui divider"></div>
+
+<div class="footer ui basic center aligned segment"> 
+  By
+  <a href="http://github.com/tprasadtp">Prasad Tengse</a>. Original Theme, Template and layout Based on <a href="http://twofactorauth.org">twofactorauth.org</a>
+</div>
+
+<!-- 3rd Party Libraries -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.js"
+        integrity="sha384-PSPYZ405uwFeU9YdtB0IByYECMwUIEGlSjmq1V7MD1zJLZ2VEw+8ko9hcpILlAjZ"
+        crossorigin="anonymous"></script>
+<script src="/js/jquery.unveil.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jets/0.13.0/jets.min.js"
+        integrity="sha384-3XpZKO/6IouOQmpAvQxLkXEb/pwxGCYqUo139/l6M12U3HmeWnna/qKWIgIJTLPV"
+        crossorigin="anonymous"></script>
+<!-- TFA JS -->
+<script src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+websites:
+    - name: FastMail
+      url: https://www.fastmail.com/
+      img: fastmail.png
+      u2f: Yes
+      yubiotp: Yes
+      doc: https://www.fastmail.com/help/account/2fa.html
+
+    - name: The XYZ
+      url: https://www.thexyz.com/
+      img: thexyz.jpg
+      u2f: No
+      yubiotp: Yes
+      hotp: No
+      doc: https://www.thexyz.com/forum/discussion/2219/how-to-add-yubikey-authentication-to-thexyz

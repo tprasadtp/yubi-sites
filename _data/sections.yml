@@ -1,0 +1,15 @@
+- id: cryptocurrencies
+  title: Cryptocurrencies
+  icon: bitcoin
+
+- id: email
+  title: Email
+  icon: mail
+
+- id: identity
+  title: Identity Management
+  icon: user
+
+- id: security
+  title: Security
+  icon: lock

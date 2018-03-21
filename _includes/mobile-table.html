@@ -1,0 +1,49 @@
+{% assign section_id = include.id-param %}
+{% assign section_title = include.title-param %}
+{% assign section_file = site.data[section_id] %}
+<div class="website-table mobile-table {{ section_id }}-table" id="{{ section_id }}-mobiletable" style="display:none">
+  <div class="label">
+    <h3>{{ section_title }}</h3>
+  </div>
+  <div class="jets-content">
+    {% for website in section_file.websites %}
+    <div class="main positive">
+      <div class="title">
+        {% if website.img %}
+        <noscript><img src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
+        <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon"
+             alt="{{ website.name }}">
+        {% endif %}
+        <a href="{{ website.url }}" class="name">{{ website.name }}</a>
+        {% include exception.html website=website %}
+      </div>
+      <p>
+        Supported:
+        {% if website.sms %}U2F{% endif %}
+        {% if website.phone %}Yubicloud-OTP{% endif %}
+        {% if website.email %}HOTP{% endif %}
+        <!--
+        {% if website.piv %}Smart-Card{% endif %}
+        {% if website.hmac %}HMAC Challenged-Response{% endif %}
+        -->
+      </p>
+      {% if website.doc %}
+      <div class="button-group">
+        <a href="{{ website.doc }}" class="ui twitter mini button"><i class="large book icon"></i></a>
+      </div>
+      {% endif %}
+    </div>
+    {% else %}
+    <div class="main negative">
+      <div class="title">
+        {% if website.img %}
+        <noscript><img src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
+        <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon"
+             alt="{{ website.name }}">
+        {% endif %}
+        <a href="{{ website.url }}" class="name">{{ website.name }}</a>
+        {% include exception.html website=website %}
+      </div>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,18 @@
+websites:
+    - name: Dashlane
+      url: https://dashlane.com
+      img: dashlane.png
+      u2f: Yes
+      yubiotp: No
+      hotp: Yes
+      doc: https://support.dashlane.com/hc/en-us/articles/206177031-Protect-your-account-using-Two-Factor-Authentication-via-an-OTP-Security-Key
+
+    - name: Lastpass
+      url: https://lastpass.com
+      img: lastpass.png
+      u2f: No
+      yubiotp: Yes
+      hotp: No
+      exceptions:
+        text: Lastpass Premium subscription is required to use Yubicloud OTP.
+      doc: https://lastpass.com/yubico
