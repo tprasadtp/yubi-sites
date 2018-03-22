@@ -6,6 +6,9 @@ mapping:
       - type: map
         name: Website
         mapping:
+          "supported":
+            type: bool
+            required: yes
           "name":
             type: str
             required: yes
@@ -25,6 +28,9 @@ mapping:
             type: bool
             pattern: /true/
           "hotp":
+            type: bool
+            pattern: /true/
+          "hmac":
             type: bool
             pattern: /true/
           "exceptions":

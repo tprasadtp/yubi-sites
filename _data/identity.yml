@@ -2,6 +2,7 @@ websites:
     - name: Centrify
       url: https://www.centrify.com
       img: centrify.png
+      supported: Yes
       u2f: Yes
       hotp: No
       yubiotp: Yes
@@ -10,23 +11,26 @@ websites:
     - name: F5 APM
       url: https://www.f5.com
       img: f5.png
+      supported: Yes
       yubiotp: Yes
       doc: https://devcentral.f5.com/articles/two-factor-authentication-using-yubikey-yubicloud-and-apm
 
     - name: Symentec VIP
       url: https://idprotect.verisign.com/
       img: vip.png
+      supported: Yes
       u2f: Yes
       yubiotp: No
       hotp: Yes
       exceptions:
-        text: No offical Methods Available. Click for more info.
+        text: No offical Methods Available for HMAC-HOTP unless Yubikey VIP is used. Click for more info.
         link: Yes
       doc: 
 
     - name: Okta
       url: https://okta.com
       img: okta.png
+      supported: Yes
       u2f: Yes
       yubiotp: Yes
       doc: https://developer.okta.com/docs/api/resources/authn.html#enroll-yubikey-factor
@@ -34,6 +38,7 @@ websites:
     - name: Duo
       url: https://duo.com
       img: duo.png
+      supported: Yes
       u2f: Yes
       yubiotp: Yes
       exceptions:
@@ -44,6 +49,7 @@ websites:
     - name: LinOTP
       url: http://linotp.org
       img: linotp.png
+      supported: Yes
       u2f: No
       yubiotp: Yes
       hotp: Yes
@@ -54,6 +60,7 @@ websites:
     - name: ESET Secure Authentication
       url: https://www.eset.com/us/business/endpoint-security/two-factor-authentication/
       img: eset.jpg
+      supported: Yes
       u2f: No
       yubiotp: No
       hotp: Yes
@@ -62,6 +69,7 @@ websites:
     - name: Privacy Idea
       url: https://privacyidea.org
       img: privacyidea.png
+      supported: Yes
       u2f: Yes
       yubiotp: Yes
       hotp: Yes
@@ -70,6 +78,7 @@ websites:
     - name: AuthStack
       url: https://www.buckhill.co.uk/kb/AuthStack/2/multi-factor-authentication/56
       img: authstack.png
+      supported: Yes
       u2f: Yes
       yubiotp: Yes
       hotp: Yes
@@ -78,6 +87,7 @@ websites:
     - name: Ping Identity
       url: https://pingidentity.com
       img: pingidentity.png
+      supported: Yes
       u2f: No
       yubiotp: Yes
       hotp: No
@@ -86,6 +96,7 @@ websites:
     - name: IBM
       url: https://www.ibm.com/developerworks/
       img: ibm.jpg
+      supported: Yes
       u2f: No
       yubiotp: Yes
       hotp: No
@@ -94,6 +105,7 @@ websites:
     - name: RED Identity Management
       url: https://liebsoft.com
       img: liebsoft.png
+      supported: Yes
       u2f: No
       yubiotp: Yes
       hotp: No
@@ -102,6 +114,7 @@ websites:
     - name: Radiant Logic
       url: https://www.radiantlogic.com/
       img: radiantlogic.png
+      supported: Yes
       u2f: No
       yubiotp: Yes
       hotp: No
@@ -110,6 +123,7 @@ websites:
     - name: OneLogin
       url: https://onelogin.com/
       img: onelogin.png
+      supported: Yes
       u2f: No
       yubiotp: Yes
       hotp: No
@@ -118,6 +132,7 @@ websites:
     - name: SecureAuth
       url: https://secureauth.com/
       img: secureauth.png
+      supported: Yes
       u2f: No
       yubiotp: Yes
       hotp: No

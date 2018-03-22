@@ -2,6 +2,7 @@ websites:
     - name: Blockchain
       url: https://blockchain.info/
       img: blockchain.png
+      supported: Yes
       u2f: No
       yubiotp: Yes
       exceptions:

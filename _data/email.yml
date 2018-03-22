@@ -2,6 +2,7 @@ websites:
     - name: FastMail
       url: https://www.fastmail.com/
       img: fastmail.png
+      supported: Yes
       u2f: Yes
       yubiotp: Yes
       doc: https://www.fastmail.com/help/account/2fa.html
@@ -9,6 +10,7 @@ websites:
     - name: The XYZ
       url: https://www.thexyz.com/
       img: thexyz.jpg
+      supported: Yes
       u2f: No
       yubiotp: Yes
       hotp: No
