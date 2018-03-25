@@ -1,0 +1,9 @@
+websites:
+    - name: Google Cloud Platform
+      url: https://cloud.google.com/
+      img: googlecloud.png
+      supported: Yes
+      u2f: Yes
+      exceptions:
+        text: Requires Google Chrome.
+      doc: https://support.google.com/accounts/answer/6103523

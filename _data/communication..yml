@@ -1,0 +1,34 @@
+websites:
+    - name: Google Hangouts
+      url: https://hangouts.google.com/
+      img: hangouts.png
+      supported: Yes
+      u2f: Yes
+      exceptions:
+        text: Requires Google Chrome
+      doc: https://support.google.com/accounts/answer/6103523
+
+    - name: Hangouts Meet
+      url: https://meet.google.com/
+      img: meet.png
+      supported: Yes
+      u2f: Yes
+      exceptions:
+        text: Only available for Gsuite accounts and requires Google Chrome.
+      doc: https://support.google.com/accounts/answer/6103523
+
+    - name: Hangouts Chat
+      url: https://chat.google.com/
+      img: chat.png
+      supported: Yes
+      u2f: Yes
+      exceptions:
+        text: Only available for GSuite accounts and requires Google Chrome.
+      doc: https://support.google.com/accounts/answer/6103523
+
+    - name: SalesForce
+      url: https://salesforce.com/
+      img: salesforce.jpg
+      supported: Yes
+      u2f: Yes
+      doc: https://help.salesforce.com/articleView?id=security_u2f_enable.htm&type=5

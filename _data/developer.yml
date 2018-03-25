@@ -1,0 +1,37 @@
+websites:
+    - name: Altassian Bitbucket
+      url: https://www.atlassian.com/software/bitbucket
+      img: bitbucket.jpg
+      supported: Yes
+      u2f: Yes
+      doc: https://confluence.atlassian.com/bitbucket/two-step-verification-777023203.html
+
+    - name: Github
+      url: https://github.com/
+      img: github.png
+      supported: Yes
+      u2f: Yes
+      doc: https://help.github.com/articles/about-two-factor-authentication
+
+    - name: Gitlab
+      url: https://www.gitlab.com/
+      img: gitlab.jpg
+      supported: Yes
+      u2f: Yes
+      doc: http://docs.gitlab.com/ce/profile/two_factor_authentication.html
+
+    - name: Sentry
+      url: https://sentry.io/
+      img: sentry.svg
+      supported: Yes
+      u2f: Yes
+      doc: https://blog.sentry.io/2016/06/22/introducing-2fa
+  
+    - name: Ubuntu SSO, Launchpad, Snap Store
+      url: https://login.ubuntu.com/
+      img: ubuntusso.png
+      supported: Yes
+      hotp: Yes
+      exceptions:
+        text: HMAC Challenge response mode is supported.
+      doc: https://help.ubuntu.com/community/SSO/FAQs/2FA

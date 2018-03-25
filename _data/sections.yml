@@ -1,15 +1,43 @@
+- id: cloud
+  title: Cloud
+  icon: cloud
+
+- id: cloudstorage
+  title: Cloud Storage
+  icon: hdd outline
+
+- id: communication
+  title: Communication / Collaboration
+  icon: comments
+
 - id: cryptocurrencies
   title: Cryptocurrencies
   icon: bitcoin
+
+- id: developer
+  title: Dev
+  icon: code
+
+- id: domain-dns
+  title: Domains and DNS
+  icon: globe
 
 - id: email
   title: Email
   icon: mail
 
+- id: finance
+  title: Finance
+  icon: money
+
 - id: identity
-  title: Identity Management
+  title: Identity Management / Single SignOn
   icon: user
 
 - id: security
-  title: Security
+  title: Security / Password Management
   icon: lock
+
+- id: selfhosted
+  title: Self Hosted
+  icon: server

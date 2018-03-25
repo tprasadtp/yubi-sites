@@ -18,3 +18,14 @@ websites:
       exceptions:
         text: Lastpass Premium subscription is required to use Yubicloud OTP.
       doc: https://lastpass.com/yubico
+
+    - name: Norton Account
+      url: https://login.norton.com
+      img: vip.png
+      supported: Yes
+      u2f: Yes
+      hotp: Yes
+      exceptions:
+        text: No offical Methods Available for HMAC-HOTP unless Yubikey VIP is used. Click for more info.
+        link: Yes
+      doc: https://support.norton.com/sp/en/us/home/current/solutions/v100023155_NortonM_Retail_1_en_us

@@ -1,0 +1,16 @@
+websites:
+    - name: Gandi.net
+      url: https://gandi.net.com/
+      img: gandi.png
+      supported: Yes
+      u2f: Yes
+      doc: https://doc.gandi.net/en/organization/users/security#u2f
+
+    - name: Google Domains
+      url: https://domains.google/
+      img: googledomains.png
+      supported: Yes
+      u2f: Yes
+      exceptions:
+        text: Requires Google Chrome.
+      doc: https://support.google.com/accounts/answer/6103523

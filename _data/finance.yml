@@ -1,0 +1,25 @@
+websites:
+    - name: Stripe
+      url: https://stripe.com/
+      img: stripe.png
+      supported: Yes
+      u2f: Yes
+      doc: https://stripe.com/blog/u2f-restricted-keys
+    
+    - name: Google Wallet/Google Pay
+      url: https://pay.google.com/about/
+      img: googlepay.png
+      supported: Yes
+      u2f: Yes
+      exceptions:
+        text: Requires Google Chrome.
+      doc: https://support.google.com/accounts/answer/6103523
+
+    - name: PayPal
+      url: https://paypal.com/
+      img: paypal.jpg
+      supported: Yes
+      hotp: Yes
+      exceptions:
+        text: Only VIP Yubikeys are Officially supported. Though there are few unofficial methods available, which use HOTP tokens.
+      doc: https://www.paypal.com/us/cgi-bin/webscr?cmd=_setup-security-key

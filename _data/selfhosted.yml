@@ -1,0 +1,18 @@
+websites:
+    - name: Nextcloud
+      url: https://nextcloud.com/
+      img: nextcloud.png
+      supported: Yes
+      u2f: Yes
+      exceptions:
+        text: Not Officially provided by Nextcloud. Additional Plugin/ Addon(s) must be installled and configured.
+      doc: https://apps.nextcloud.com/apps/twofactor_u2f
+    
+    - name: WordPress [Self Hosted]
+      url: https://wordpress.org
+      img: wordpress.png
+      supported: Yes
+      u2f: Yes
+      exceptions:
+        text: Plugin by yubico is Deprecated.
+      doc: https://github.com/georgestephanis/two-factor

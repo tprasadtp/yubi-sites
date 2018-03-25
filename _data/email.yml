@@ -7,6 +7,15 @@ websites:
       yubiotp: Yes
       doc: https://www.fastmail.com/help/account/2fa.html
 
+    - name: Gmail / GSuite
+      url: https://gmail.com/
+      img: gmail.png
+      supported: Yes
+      u2f: Yes
+      exceptions:
+        text: Requires Google Chrome. Signing into Android requires NFC or Bluetooth capable U2F device.
+      doc: https://support.google.com/accounts/answer/6103523
+
     - name: The XYZ
       url: https://www.thexyz.com/
       img: thexyz.jpg
