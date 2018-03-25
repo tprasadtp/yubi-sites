@@ -1,8 +1,6 @@
 # List of sites supporting various Yubikey Authentication methods.
 
-=================
-
-[![Build Status](https://travis-ci.org/tprasadtp/yubi-sites)](https://travis-ci.org/2factorauth/twofactorauth)
+[![Build Status](https://travis-ci.org/tprasadtp/yubi-sites)](https://travis-ci.org/tprasadtp/yubi-sites/)
 [![License](https://img.shields.io/badge/license-mit-blue.svg?style=flat)](/LICENSE)
 
 A list of popular sites and whether or not they accept Yubikey Features
