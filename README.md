@@ -1,4 +1,5 @@
-List of sites supporting various Yubikey Authentication methods.
+# List of sites supporting various Yubikey Authentication methods.
+
 =================
 
 [![Build Status](https://travis-ci.org/tprasadtp/yubi-sites)](https://travis-ci.org/2factorauth/twofactorauth)
@@ -17,19 +18,27 @@ If you'd like to contribute, read the entire guidelines here in
 [CONTRIBUTING.md][contrib].
 
 ## Running Locally
-This project is built upon [Jekyll](https://jekyllrb.com/), using the [github-pages](https://github.com/github/pages-gem) gem.
+
+This project is built upon [Jekyll](https://jekyllrb.com/).
 In order to run the site locally, it is necessary to install bundler, install all dependencies, and then use Jekyll to serve
 the site. If the `gem` command is not available to you, it is necessary to install Ruby with RubyGems.
 Once Ruby and RubyGems are installed and available from the command line, TwoFactorAuth can be setup using the following commands.
+Alternatively you can use Docker.
 
-```
+``` bash
 gem install bundler
 cd ~/twofactorauth
 bundle install
 bundle exec jekyll serve
 ```
 
-The TwoFactorAuth website should then be accessible from `http://localhost:4000`.
+OR
+
+```bash
+docker-compose up
+```
+
+Website should then be accessible from `http://localhost:4000`.
 
 ## License
 
@@ -38,3 +47,7 @@ This code is distributed under the MIT license. For more info, read the
 
 [contrib]: /CONTRIBUTING.md
 [license]: /LICENSE
+
+## Credits
+
+Javascript and the code is based on twofactorauth.org
