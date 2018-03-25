@@ -20,3 +20,5 @@ exclude:
     - Rakefile
     - verify.rb
     - vendor
+    - Dockerfile
+    - docker-compose.yml
