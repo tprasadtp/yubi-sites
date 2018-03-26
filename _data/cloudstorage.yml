@@ -13,6 +13,8 @@ websites:
       img: googledrive.png
       supported: Yes
       u2f: Yes
+      yubiotp: No
+      hotp: No
       exceptions:
         text: Requires Google Chrome.
       doc: https://support.google.com/accounts/answer/6103523
