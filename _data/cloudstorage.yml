@@ -4,6 +4,8 @@ websites:
       img: dropbox.png
       supported: Yes
       u2f: Yes
+      yubiotp: No
+      hotp: No
       doc: https://www.dropbox.com/help/363/en
     
     - name: Google Drive

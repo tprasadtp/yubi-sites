@@ -4,6 +4,8 @@ websites:
       img: stripe.png
       supported: Yes
       u2f: Yes
+      yubiotp: No
+      hotp: No
       doc: https://stripe.com/blog/u2f-restricted-keys
     
     - name: Google Wallet/Google Pay
@@ -11,6 +13,8 @@ websites:
       img: googlepay.png
       supported: Yes
       u2f: Yes
+      yubiotp: No
+      hotp: No
       exceptions:
         text: Requires Google Chrome.
       doc: https://support.google.com/accounts/answer/6103523
@@ -20,6 +24,8 @@ websites:
       img: paypal.jpg
       supported: Yes
       hotp: Yes
+      yubiotp: No
+      hotp: No
       exceptions:
         text: Only VIP Yubikeys are Officially supported. Though there are few unofficial methods available, which use HOTP tokens.
       doc: https://www.paypal.com/us/cgi-bin/webscr?cmd=_setup-security-key

@@ -4,6 +4,8 @@ websites:
       img: hangouts.png
       supported: Yes
       u2f: Yes
+      yubiotp: No
+      hotp: No
       exceptions:
         text: Requires Google Chrome
       doc: https://support.google.com/accounts/answer/6103523
@@ -13,6 +15,8 @@ websites:
       img: meet.png
       supported: Yes
       u2f: Yes
+      yubiotp: No
+      hotp: No
       exceptions:
         text: Only available for Gsuite accounts and requires Google Chrome.
       doc: https://support.google.com/accounts/answer/6103523
@@ -22,6 +26,8 @@ websites:
       img: chat.png
       supported: Yes
       u2f: Yes
+      yubiotp: No
+      hotp: No
       exceptions:
         text: Only available for GSuite accounts and requires Google Chrome.
       doc: https://support.google.com/accounts/answer/6103523
@@ -31,4 +37,6 @@ websites:
       img: salesforce.jpg
       supported: Yes
       u2f: Yes
+      yubiotp: No
+      hotp: No
       doc: https://help.salesforce.com/articleView?id=security_u2f_enable.htm&type=5

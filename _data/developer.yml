@@ -4,6 +4,8 @@ websites:
       img: bitbucket.jpg
       supported: Yes
       u2f: Yes
+      yubiotp: No
+      hotp: No
       doc: https://confluence.atlassian.com/bitbucket/two-step-verification-777023203.html
 
     - name: Github
@@ -11,6 +13,8 @@ websites:
       img: github.png
       supported: Yes
       u2f: Yes
+      yubiotp: No
+      hotp: No
       doc: https://help.github.com/articles/about-two-factor-authentication
 
     - name: Gitlab
@@ -18,6 +22,8 @@ websites:
       img: gitlab.jpg
       supported: Yes
       u2f: Yes
+      yubiotp: No
+      hotp: No
       doc: http://docs.gitlab.com/ce/profile/two_factor_authentication.html
 
     - name: Sentry
@@ -25,6 +31,8 @@ websites:
       img: sentry.svg
       supported: Yes
       u2f: Yes
+      yubiotp: No
+      hotp: No
       doc: https://blog.sentry.io/2016/06/22/introducing-2fa
   
     - name: Ubuntu SSO, Launchpad, Snap Store
@@ -32,6 +40,17 @@ websites:
       img: ubuntusso.png
       supported: Yes
       hotp: Yes
+      yubiotp: No
+      hotp: No
       exceptions:
         text: HMAC Challenge response mode is supported.
       doc: https://help.ubuntu.com/community/SSO/FAQs/2FA
+
+    - name: Status.io
+      url: https://status.io
+      img: statusio.jpeg
+      supported: Yes
+      u2f: Yes
+      yubiotp: No
+      hotp: No
+      doc: http://blog.status.io/2014/03/01/yubikey/

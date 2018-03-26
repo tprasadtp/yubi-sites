@@ -5,6 +5,7 @@ websites:
       supported: Yes
       u2f: No
       yubiotp: Yes
+      hotp: No
       exceptions:
         text: Either Google Authenticator or Yubikey can be configured. Not both.
       doc: https://support.blockchain.com/hc/en-us/articles/211164103-Enable-2-Step-Verification-2FA

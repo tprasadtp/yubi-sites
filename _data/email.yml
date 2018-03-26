@@ -4,6 +4,7 @@ websites:
       img: fastmail.png
       supported: Yes
       u2f: Yes
+      hotp: No
       yubiotp: Yes
       doc: https://www.fastmail.com/help/account/2fa.html
 
@@ -12,6 +13,8 @@ websites:
       img: gmail.png
       supported: Yes
       u2f: Yes
+      yubiotp: No
+      hotp: No
       exceptions:
         text: Requires Google Chrome. Signing into Android requires NFC or Bluetooth capable U2F device.
       doc: https://support.google.com/accounts/answer/6103523
@@ -21,6 +24,7 @@ websites:
       img: thexyz.jpg
       supported: Yes
       u2f: No
+      hotp: No
       yubiotp: Yes
       hotp: No
       doc: https://www.thexyz.com/forum/discussion/2219/how-to-add-yubikey-authentication-to-thexyz

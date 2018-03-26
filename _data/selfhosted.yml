@@ -14,5 +14,5 @@ websites:
       supported: Yes
       u2f: Yes
       exceptions:
-        text: Plugin by yubico is Deprecated.
+        text: Plugin by Yubico is deprecated.
       doc: https://github.com/georgestephanis/two-factor

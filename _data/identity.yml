@@ -4,15 +4,17 @@ websites:
       img: centrify.png
       supported: Yes
       u2f: Yes
-      hotp: No
       yubiotp: Yes
+      hotp: No
       doc: https://www.centrify.com/solutions/why-multi-factor-authentication/
 
     - name: F5 APM
       url: https://www.f5.com
       img: f5.png
       supported: Yes
+      u2f: No
       yubiotp: Yes
+      hotp: No
       doc: https://devcentral.f5.com/articles/two-factor-authentication-using-yubikey-yubicloud-and-apm
 
     - name: Symentec VIP
@@ -33,6 +35,7 @@ websites:
       supported: Yes
       u2f: Yes
       yubiotp: Yes
+      hotp: No
       doc: https://developer.okta.com/docs/api/resources/authn.html#enroll-yubikey-factor
 
     - name: Duo
@@ -41,6 +44,7 @@ websites:
       supported: Yes
       u2f: Yes
       yubiotp: Yes
+      hotp: No
       exceptions:
         text: For Limitations and Differences between U2F and YubiOTP click the link. 
         link: https://help.duo.com/s/article/2942?language=en_US

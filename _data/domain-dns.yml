@@ -4,6 +4,8 @@ websites:
       img: gandi.png
       supported: Yes
       u2f: Yes
+      yubiotp: No
+      hotp: No
       doc: https://doc.gandi.net/en/organization/users/security#u2f
 
     - name: Google Domains
@@ -11,6 +13,8 @@ websites:
       img: googledomains.png
       supported: Yes
       u2f: Yes
+      yubiotp: No
+      hotp: No
       exceptions:
         text: Requires Google Chrome.
       doc: https://support.google.com/accounts/answer/6103523
