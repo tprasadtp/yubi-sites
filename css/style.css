@@ -1,0 +1,124 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+
+p {
+  line-height: 2rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+div {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Image Resize container */
+.clearfix {
+  overflow: auto;
+}
+
+
+/* Signal App */
+.fa-fonticons:before {
+  content: "\f280";
+}
+.fa-textsecure:before {
+  content: "\f28a";
+}
+.fa-signal-messenger:before {
+  content: "\f28b";
+}
+
+.fa-textsecure:before {
+  content:"\f28a"
+}
+
+.fa-signal-messenger:before { 
+  content:"\f28b"
+}
+
+/* Brand Image Colors */
+.twitter-color {
+  background-color: #1da1f2 !important;
+}
+
+.facebook-color {
+  background-color: #3b5998 !important;
+}
+
+.github-color {
+  background-color: #333 !important;
+}
+
+.medium-color {
+  background-color: #02b875!important;
+}
+
+.whatsapp-color {
+  background-color: #25d366 !important;
+}
+
+.reddit-color {
+  background-color: #ff4500 !important;
+}
+
+.issue-color {
+  background-color: #fc6d26 !important;
+}
+
+.telegram-color {
+   background-color: #0088cc !important;
+}
+
+
+
+

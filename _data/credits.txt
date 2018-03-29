@@ -1,0 +1,5 @@
+https://realfavicongenerator.net/social/ Favicon Generator
+CSS: Materialize-CSS 
+Icons: 
+Yubikey Icon: Edited from google
+Javascript twofactorauth.org

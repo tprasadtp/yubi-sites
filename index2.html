@@ -1,0 +1,85 @@
+---
+layout: default
+---
+
+<noscript>
+  <div class="ui icon error message">
+    <i class="warning sign icon"></i>
+
+    <div class="content">
+      <h1>It looks like you have JavaScript disabled!</h1>
+
+      <p>
+        Without JavaScript, this page probably won't work very well.
+        For more information, or if you would like to talk to us about this,
+        please take a look at our <a href="https://github.com/tprasadtp/yubi-otp-sites">
+        GitHub repository</a>.
+      </p>
+    </div>
+  </div>
+</noscript>
+
+<div id="top-header" class="ui center aligned icon header">
+  <img src="{{ site.uri }}/img/logo.png" class="icon" alt="{{ site.title }}">
+
+  <h2>{{ site.title }}</h2>
+
+  <div class="sub header">List of websites and whether or not they support
+    <a href="https://developers.yubico.com/OTP/">Yubico OTP,</a>
+    <a href="https://www.yubico.com/products/services-software/personalization-tools/oath/">HOTP</a>
+    <a href="https://www.yubico.com/solutions/fido-u2f/">U2F</a>. 
+  </div>
+  <div class="sub header">
+    Apps which support TOTP codes, SMS, Email but not other methods supported by Yubikey are excluded. 
+    Please refer <a href="http://twofactorauth.org">twofactorauth.org</a>
+  </div>
+  <div class="sub header">
+    Help us expand! Add your own favorite site by submitting a pull request on the
+    <a href="https://github.com/prasadtp/yubi-otp-sites">GitHub repo</a>.
+  </div>
+  <div id="search-wrapper" class="sub header">
+    <label for="jets-search">
+      <i class="search icon"></i>
+    </label>
+    <input type="search" id="jets-search" placeholder="Search websites" autocomplete="off" spellcheck="false"
+           tabindex="0">
+  </div>
+</div>
+
+<div class="ui stackable grid container">
+  <div class="five column row">
+    {% assign rowcount = 0 %}
+    {% for section in site.data.sections %}
+    {% assign rowend = forloop.index | modulo: 5 %}
+    {% if rowend == 0 or forloop.index == forloop.length %}
+    <div id="{{ section.id }}" class="category column">
+      <h5 class="ui icon header">
+        <i class="circular {{ section.icon }} icon"></i>
+        <small>{{ section.title }}</small>
+      </h5>
+    </div>
+    {% include mobile-table.html id-param=section.id title-param=section.title %}
+    {% assign offcount = 5 | times: rowcount %}
+    {% for section in site.data.sections limit: 5 offset: offcount %}
+    {% include desktop-table.html id-param=section.id title-param=section.title %}
+    {% endfor %}
+  </div>
+  {% if forloop.index != forloop.length %}
+  {% assign rowcount = rowcount | plus: '1' %}
+  <div class="five column row">
+  {% endif %}
+    {% else %}
+    <div id="{{ section.id }}" class="category column">
+      <h5 class="ui icon header">
+        <i class="circular {{ section.icon }} icon"></i>
+        <small>{{ section.title }}</small>
+      </h5>
+    </div>
+    {% include mobile-table.html id-param=section.id title-param=section.title %}
+    {% endif %}
+    {% endfor %}
+  </div>
+
+  <div id="no-results">
+    <h2>No results found</h2>
+  </div>

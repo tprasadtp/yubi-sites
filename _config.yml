@@ -1,15 +1,16 @@
 permalink: pretty
 markdown: kramdown
 
-title: Yubikey Authentication
+title: YubiSites
 author: Prasad Tengse
 description:
     List of sites with Two Factor Auth support which includes SMS, email,
     phone calls, hardware, and software.
+baseurl: ""
 url: https://yubikey.prasadt.com
 repo: https://github.com/tprasadtp/yubi-otp-sites
 img: img/logo.png
-include: ['_pages']
+include: ['_pages','mdl']
 exclude:
     - CNAME
     - CONTRIBUTING.md
@@ -22,3 +23,5 @@ exclude:
     - vendor
     - Dockerfile
     - docker-compose.yml
+
+google-anaytics: UA-101760811-4
