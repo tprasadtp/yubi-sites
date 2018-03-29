@@ -1,7 +1,7 @@
 ---
 layout: none
 color: 
-  primary: blue darken-3
+  primary: deep-purple lighten-
   secondary: amber darken-1
 ---
 <!DOCTYPE html>
@@ -18,7 +18,7 @@ color:
       </div>
       
       <!-- Panel -->
-      <div class="weaves-effect card-panel white lighten-1">
+      <div class="card-panel white lighten-1">
         <span class="black-text lighten-4 valign center">
             <p class="valign center"> List of websites and whether or not they support Yubico OTP, HOTP U2F.</p>
             <p class="valign center"> Apps which support TOTP codes, SMS, Email but not other methods supported by Yubikey are excluded.</p>
@@ -27,7 +27,7 @@ color:
 
       <!-- Search Bar -->
       <nav>
-        <div class="nav-wrapper {{ page.color.secondary }}">
+        <div class="nav-wrapper {{ page.color.secondary }} white-text">
           <form>
             <div class="input-field white-text">
               <input id="search" type="search" required>
@@ -41,6 +41,13 @@ color:
     <!-- Add V Space --> 
     <div style="height:200px"></div>
 
+    <!-- Facebook Disabled Panel -->
+    <div class="card-panel white lighten-1">
+        <span class="black-text lighten-4 valign center">
+            <p class="valign center red-text"> <i class="material-icons red-text left">warning</i> As a protest against Facebook mishandling 50M user's data, I have diabled sharing on Facebook &amp; Messenger buttons in the share menu.</p>
+        </span>
+    </div>
+
     </div> <!-- Section -->
   </div> <!-- Container -->
 
@@ -50,9 +57,8 @@ color:
   {% include footer.html %}
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
   <script src="js/init.js"></script>
   </body>
 </html>
