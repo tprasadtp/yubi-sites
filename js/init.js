@@ -14,7 +14,7 @@ const publicKey = 'BDNcdR7b5w_zVUNsmmKbZoKn-IKNSvqdhIBSKHc75Iy8k7UXfZZG9dzUnHasP
 
 self.addEventListener('activate', function(event) {
 
-  var cacheWhitelist = ['yubisites-v1'];
+  var cacheWhitelist = ['yubisites-v2'];
 
   event.waitUntil(
     caches.keys().then(function(cacheNames) {

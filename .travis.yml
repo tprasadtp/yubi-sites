@@ -4,7 +4,7 @@ rvm: 2.4.0
 os: linux
 cache:
   bundler: true
-  directories: $TRAVIS_BUILD_DIR/tmp/.htmlproofer
+  directories: "$TRAVIS_BUILD_DIR/tmp/.htmlproofer"
 addons:
   apt:
     packages:
@@ -12,8 +12,12 @@ addons:
     - ca-certificates
 matrix:
   include:
-    - script: bundle exec rake
-    - script: bundle exec rake proof_external
-      env: NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - script: bundle exec rake
+  - script: bundle exec rake proof_external
+    env: NOKOGIRI_USE_SYSTEM_LIBRARIES=true
   allow_failures:
-    - script: bundle exec rake proof_external
+  - script: bundle exec rake proof_external
+notifications:
+  email: false
+  slack:
+    secure: zDCvWKy9xR3G59+PuX49lAuKDdQonCJnW2/NCYBiQQyEuKHUiipsXOfJYoEu2ThXwbYl2OYIYRtlqBBRS4VqX9LfKLpJvu7HU0x8THtmDzc83VabTcW9hgZtNrNOUIB3d0awcA+AV9dzSq2WQj0A4lbaVDAuCejRe+sK/E5tyYeChM+uSJaA6YnWvzCiAOld0Pocv3H22FiZd4Bjomro6/7QRe+CYff1fB5ILvHNXEe3G9ccpht1ulzbSuqKbRd6YS7NhLum/qkkSIj7HFgNrOBiCPckulC2kOgHHSiFHDU0XUx858ZLG6kqpcj+3RO7gIR7qUnL2skHDP2nZzlQXcXgfidBe6W6qiPxmH+dmcBwny1Ugs4/wDAxxolJPoR4otEBqQPGuKKA3E7yRhO2nFc7dbGIm54DoznTtGoD2JizRUy9tkih00kNra0MdfOOs8VOQniO2XRJAUlUtK+uyF8aM8XhkBXVokI5Y85DmRcydDIAsbeYPgqNuuC4KZ7tVqfcTgUmSZ9I+z3iTBksirLv6ZZLtQq5YC9WgKb+Ph9MAzPqbntcir3yQQ+0M6e+9c5ZTEBjZVNUXjIt2AtKXZBU/rPaj/NyoWncNBrb5Vr1QuBOxR0lsKLuOH1ZIxgi/Uk59kMQrY/HZFsvYgAdb9tIr/tpZy44efIbelOdFnI=
