@@ -39,9 +39,9 @@ websites:
       url: https://login.ubuntu.com/
       img: ubuntusso.png
       supported: Yes
+      u2f: No
       hotp: Yes
       yubiotp: No
-      hotp: No
       exceptions:
         text: HMAC Challenge response mode is supported.
       doc: https://help.ubuntu.com/community/SSO/FAQs/2FA
