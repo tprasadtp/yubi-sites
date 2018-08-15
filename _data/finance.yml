@@ -25,7 +25,6 @@ websites:
       supported: Yes
       hotp: Yes
       yubiotp: No
-      hotp: No
       exceptions:
         text: Only VIP Yubikeys are Officially supported. Though there are few unofficial methods available, which use HOTP tokens.
       doc: https://www.paypal.com/us/cgi-bin/webscr?cmd=_setup-security-key

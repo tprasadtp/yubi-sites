@@ -28,5 +28,15 @@ websites:
       hotp: Yes
       exceptions:
         text: No offical Methods Available for HMAC-HOTP unless Yubikey VIP is used. Click for more info.
-        link: Yes
       doc: https://support.norton.com/sp/en/us/home/current/solutions/v100023155_NortonM_Retail_1_en_us
+
+    - name: Bitwarden
+      url: https://bitwarden.com
+      img: bitwarden.png
+      supported: Yes
+      u2f: Yes
+      yubiotp: Yes
+      hotp: No
+      exceptions:
+        text: Requires Premium.
+      doc: https://help.bitwarden.com/article/setup-two-step-login-u2f/
