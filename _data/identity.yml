@@ -26,8 +26,7 @@ websites:
       hotp: Yes
       exceptions:
         text: No offical Methods Available for HMAC-HOTP unless Yubikey VIP is used. Click for more info.
-        link: Yes
-      doc: 
+      doc:
 
     - name: Okta
       url: https://okta.com
@@ -45,9 +44,6 @@ websites:
       u2f: Yes
       yubiotp: Yes
       hotp: No
-      exceptions:
-        text: For Limitations and Differences between U2F and YubiOTP click the link. 
-        link: https://help.duo.com/s/article/2942?language=en_US
       doc: https://duo.com/docs/yubikey
 
     - name: LinOTP
@@ -78,7 +74,7 @@ websites:
       yubiotp: Yes
       hotp: Yes
       doc: http://privacyidea.readthedocs.io/en/latest/configuration/token_config.html
-  
+
     - name: AuthStack
       url: https://www.buckhill.co.uk/kb/AuthStack/2/multi-factor-authentication/56
       img: authstack.png
@@ -132,7 +128,7 @@ websites:
       yubiotp: Yes
       hotp: No
       doc: https://support.onelogin.com/hc/en-us/articles/202361560-Yubico
-    
+
     - name: SecureAuth
       url: https://secureauth.com/
       img: secureauth.png
@@ -141,4 +137,3 @@ websites:
       yubiotp: Yes
       hotp: No
       doc: https://docs.secureauth.com/display/91docs/YubiKey+Begin+Site+Configuration+Guide
-      

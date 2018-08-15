@@ -7,7 +7,7 @@ websites:
       yubiotp: No
       hotp: No
       doc: https://www.dropbox.com/help/363/en
-    
+
     - name: Google Drive
       url: https://drive.google.com/
       img: googledrive.png

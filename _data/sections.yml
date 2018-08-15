@@ -41,3 +41,7 @@
 - id: selfhosted
   title: Self Hosted
   icon: server
+
+- id: social
+  title: Social Media
+  icon: users

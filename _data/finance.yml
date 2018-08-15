@@ -7,7 +7,7 @@ websites:
       yubiotp: No
       hotp: No
       doc: https://stripe.com/blog/u2f-restricted-keys
-    
+
     - name: Google Wallet/Google Pay
       url: https://pay.google.com/about/
       img: googlepay.png

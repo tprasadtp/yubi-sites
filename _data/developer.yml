@@ -34,7 +34,7 @@ websites:
       yubiotp: No
       hotp: No
       doc: https://blog.sentry.io/2016/06/22/introducing-2fa
-  
+
     - name: Ubuntu SSO, Launchpad, Snap Store
       url: https://login.ubuntu.com/
       img: ubuntusso.png
